@@ -1,0 +1,1015 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    top:0;  
+    overflow: hidden;
+    z-index: 50;
+    height: 20vh;
+    }
+
+    .mainlogo{
+      float: left;
+      width: 10%;
+      height: auto;
+      margin-left: 3%;
+      margin-top: 2%;
+    }
+    nav ul{
+      float: right;
+      margin-right: 200px;
+      overflow: auto;
+      resize: both;
+    }
+    nav li{
+      display: inline-block;
+      margin: 0 8px;
+      line-height: 80px;
+    }
+    nav a{
+      color: #000000;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 7px 10px;
+    }
+    .searchicon{
+      float: right;
+      height: 35px;
+      width: 35px;
+      margin-right: 1%;
+      margin-top: 2%;
+    }
+    
+    .carticon{
+      float: right;
+      height: 30px;
+      width: 30px;
+      margin-right: 1%;
+      margin-top: 2%;
+    }
+    .menuicon{
+      float: right;
+      height: 30px;
+      width: 30px;
+      margin-right: 3%;
+      margin-top: 2%;
+    }
+   
+
+  #homepage{
+      width: 100%;
+      height: auto;
+      padding-bottom: 5%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    height: auto;
+   
+  }
+  
+  .column {
+    flex: 46%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .innercontainer{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height: calc(100% - 0px);
+    cursor: pointer;   
+  }
+
+  .homepic1{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.innercontainer1{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: calc(50% -14px);
+  cursor: pointer;
+}
+
+  .homepic2{
+    width: 100%;
+   transition: transform 2s;
+   vertical-align: middle;
+   height: 100%;
+   
+}
+
+.homepic2:hover{
+   transform: scale(1.1);  
+}
+
+.innercontainer2{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: calc(50% - 14px);
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+  .homepic3{
+    width: 100%;
+    transition: transform 2s;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .homepic3:hover{
+    transform: scale(1.1);  
+ }
+
+  .contentbox1 {
+    position: absolute;
+    bottom: 20%;
+    background: rgba(4,22,50,.9);
+    background: rgba(4,22,50,.9);
+    color: #ffffff;
+    width: 55%;
+    height: 57vh;
+    padding-top: 10%;
+    padding-right: 7%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    margin-left: 16%;
+    }
+
+  .contentbox1 h3{
+    font-size: 125%;
+    font-weight: bolder;
+  }
+
+  .contentbox1 h1{
+    font-weight: bolder;
+    font-size: 800%;
+    color: #dda973;
+  }
+
+  .learnbtn{
+    margin-top: 10%;
+    padding: 5%;
+    width: 50%;
+    height: auto;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .learnbtn:hover{
+    background-color: #dda973;
+    border: none;
+  }
+
+  .contentbox2 {
+    position: absolute;
+    bottom: 20%;
+    margin-left: 4%;
+    cursor: pointer;
+   
+  }
+
+  .contentbox2 h1{
+    font-weight: bold;
+    font-size: 220%;
+    color: white;
+  }
+
+  .contentbox3 {
+    position: absolute;
+    bottom: 18%;
+    margin-left: 4%;
+    
+  }
+
+  .contentbox3 h1{
+    font-weight: bold;
+    font-size: 220%;
+    color: white;
+  }
+
+  .shopnowbtn{
+    margin-top: 6%;
+    padding: 5%;
+    width: 50%;
+    height: auto;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .shopnowbtn:hover{
+    background-color: #dda973;
+    border: none;
+  }
+
+ 
+
+
+/*Code For Products*/
+
+.products{
+  width: 100%;
+  height: auto;
+}
+
+.product-container-header{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Product-button{
+font-weight: bolder;
+ font-size: 200%;
+ cursor: pointer;
+ color: gray;
+ text-decoration: none;
+}
+
+.Product-button:hover{
+  color: #000000;
+  box-shadow: 0px -3px 0 gray inset;
+}
+
+/*Code for New Product */
+#show1{
+  height: auto;
+  width: 100%;
+  
+}
+.newproduct-box{
+        
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+        margin-top: 5%;
+        margin-left: 5%;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;      
+}
+
+/*Code for top sale*/
+#show2{
+  height: auto;
+  width: 100%;
+  display: none;
+}
+.topsale-box{
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        margin-top: 5%;
+        margin-left: 5%;
+}
+
+/*Code for sale OFF*/
+#show3{
+  height: auto;
+  width: 100%;
+  display: none;
+}
+.saleoff-box{
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        margin-top: 5%;
+        margin-left: 5%;
+        
+}
+.tag{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(00,00,00,0.5);
+    transition: .5s ease;
+    opacity: 0;
+    }
+
+    .innerbox:hover .photo{
+      opacity: 0.5;
+    }
+
+    .innerbox:hover .tag {
+      opacity: 1;
+    }
+    .innerbox:hover .tag2 {
+      opacity: 1;
+    }
+
+
+.tag2{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(00,00,00,0.5);
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.icons{
+  width: 12%;
+  height: 12%;
+  cursor: pointer;
+  margin-top: 50%;
+  margin-left: 8%;
+}
+
+.icons:hover{
+  background-color: white;
+  width: 15%;
+  height: 15%;
+}
+
+.innerbox{
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.innerbox P{
+  color: black;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.innerbox p:hover{
+  color: #dda973;
+}
+.innerbox span{
+  color: gray;
+}
+
+.photo{
+  height: 100%;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+/*code for view all products*/ 
+.view-products{
+  width: 100%;
+  height: auto;
+}
+
+.view-products h1{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #080808;
+  text-align: center;
+  padding: 4%;
+  cursor: pointer;
+}
+.hr-products{
+  width: 18%;
+  margin-top: 0.5%;
+  margin-left: 41%;
+  border: 1px solid rgba(83, 81, 81, 0.782);
+  cursor: pointer;
+}
+
+.hr-products:hover{
+  border: 1px solid black;
+}
+
+.viewproducts-container{
+  width: 100%;
+  height: auto; 
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.productpic{
+  width: 100%;
+  height: auto;
+  position: relative;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.productpic1{
+  position: absolute;
+  height: calc(100% - 22%);
+  right: 0;
+  width: 55%;
+  vertical-align: middle;
+}
+
+.viewproduct-content2{
+  position: absolute;
+  bottom: -260%;
+  color: #ffffff;
+  width: 25%;
+  height: 30vh;
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  margin-left: 60%;
+}
+
+.viewproduct-content2 h1{
+  text-align:left;
+  font-weight: bolder;
+  font-size: 250%;
+  color: #dda973;
+  padding-left: 7%;
+}
+
+.viewproduct-content2 h3{
+  padding-left: 7%;
+  padding-top: 1%;
+  font-size: 180%;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.viewproduct-shopbtn{
+  padding: 3%;
+  width: 38%;
+  margin-left: 7%;
+  height: 8vh;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.viewproduct-shopbtn:hover{
+  background-color: #dda973;
+  border: none;
+}
+
+/*code for responsive*/
+
+/* for large screen 1200px and below */
+
+@media only screen and (max-width:1200px){
+  #navbar {
+    width: 100%;
+    height: 10vh;
+    }
+
+    nav ul{
+      float: right;
+      margin-right: 100px;
+      overflow: auto;
+      resize: both;
+    }
+    
+  
+
+   #homepage{
+    width: 100%;
+    height: auto;
+  }
+  
+  .contentbox1 {
+    position: absolute;
+    bottom: 15%;
+    width: 55%;
+    height: 35vh;
+    }
+
+  .contentbox1 h3{
+    font-size: 115%;
+    font-weight: bolder;
+  }
+
+
+/*Responsive code for product*/
+
+
+.products{
+  width: 100%;
+  height: auto;
+}
+
+.newproduct-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+        grid-column-gap: 60px;
+
+}
+
+.topsale-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.saleoff-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+/* responsive code for view all products*/ 
+
+.view-products{
+  width: 100%;
+  height: 100%;
+}
+
+.viewproducts-container{
+  width: 100%;
+  height: 100%; 
+}
+
+.productpic{
+  width: 100%;
+  height: 100%;
+}
+
+.productpic1{
+  position: absolute;
+  height: calc(100% - 57.8%);
+  right: 0;
+  width: 55%;
+  vertical-align: middle;
+}
+
+.viewproduct-content2{
+  position: absolute;
+  bottom: -110%;
+  width: 20%;
+  height: 15%;
+  margin-left: 65%;
+  padding-top: 1%;
+}
+
+.viewproduct-content2 h1{
+  font-weight: bolder;
+  font-size: 220%;
+  color: #dda973;
+}
+
+.viewproduct-content2 h3{
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.viewproduct-shopbtn{
+  width: 50%;
+  height: 4vh;
+}
+
+}
+
+
+/* for laptop screen 992px  */
+@media only screen and (max-width:992px){
+   
+  #navbar {
+    width: 100%;
+    height: 10vh;
+    }
+
+    nav ul{
+      float: right;
+      margin-right: 100px;
+
+    }
+
+    nav li{
+      margin: 0 2px;
+      line-height: 80px;
+    }
+    nav a{
+      color: #000000;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 2px 4px;
+    }
+
+
+
+  #homepage{
+    width: 100%;
+    height: auto;
+  }
+  
+  .contentbox1 {
+    position: absolute;
+    bottom: 18%;
+    width: 55%;
+    height: 22vh;
+    }
+
+    .learnbtn{
+      width: 60%;
+      height: 5vh;
+    }
+
+  .contentbox1 h3{
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+  .contentbox1 h1{
+    font-size: 5rem;
+   
+  }
+
+
+
+/*Responsive code for product*/
+.products{
+  width: 100%;
+  height: auto;
+}
+
+.newproduct-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.topsale-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.saleoff-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+/* responsive code for view all products*/ 
+
+.view-products{
+  width: 100%;
+  height: 100%;
+}
+
+.viewproducts-container{
+  width: 100%;
+  height: 100%; 
+}
+
+.productpic{
+  width: 100%;
+  height: 100%;
+}
+
+.productpic1{
+  position: absolute;
+  height: calc(100% - 65%);
+  right: 0;
+  width: 55%;
+  vertical-align: middle;
+}
+
+.viewproduct-content2{
+  position: absolute;
+  bottom: -88%;
+  width: 20%;
+  height: 15%;
+  margin-left: 65%;
+  padding-top: 1%;
+}
+
+.viewproduct-content2 h1{
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #dda973;
+}
+
+.viewproduct-content2 h3{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.viewproduct-shopbtn{
+  width: 50%;
+  height: 4vh;
+}
+
+}
+
+/* for tablet screen 768px  */
+@media only screen and (max-width:768px){
+   
+  #navbar {
+    width: 100%;
+    height: 10vh;
+    }
+
+    nav ul{
+      float: right;
+      margin-right: 60px;
+
+    }
+
+    nav li{
+      margin: 0 2px;
+      line-height: 80px;
+    }
+    nav a{
+      color: #000000;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 2px 4px;
+    }
+
+    .mainlogo{
+      margin-top: 4%;
+      margin-left: 4%;
+    }
+
+    .menuicon{
+      margin-top: 3%;
+    }
+
+
+    .carticon{
+      margin-top: 3%;
+    }
+
+    .searchicon{
+      margin-top: 3%;
+    }
+
+
+  #homepage{
+    width: 100%;
+    height: auto;
+  }
+
+  .innercontainer1{
+    margin-top: 28px;
+  }
+  
+  .contentbox1 {
+    position: absolute;
+    bottom: 18%;
+    width: 40%;
+    height: 22vh;
+    margin-left: 25%;
+    }
+
+    .learnbtn{
+      width: 60%;
+      height: 5vh;
+    }
+
+  .contentbox1 h3{
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+  .contentbox1 h1{
+    font-size: 5rem;
+   
+  }
+
+/*Responsive code for product*/
+.products{
+  width: 100%;
+  height: auto;
+}
+
+.Product-button{
+  font-size: 25px;
+}
+.newproduct-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.topsale-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.saleoff-box{
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+/* responsive code for view all products*/ 
+
+.view-products{
+  width: 100%;
+  height: 100%;
+}
+
+.viewproducts-container{
+  width: 100%;
+  height: 100%; 
+}
+
+.productpic{
+  width: 100%;
+  height: 100%;
+}
+
+.productpic1{
+  position: absolute;
+  height: calc(100% - 65%);
+  right: 0;
+  width: 55%;
+  vertical-align: middle;
+}
+
+.viewproduct-content2{
+  position: absolute;
+  bottom: -88%;
+  width: 20%;
+  height: 15%;
+  margin-left: 65%;
+  padding-top: 1%;
+}
+
+.viewproduct-content2 h1{
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #dda973;
+}
+
+.viewproduct-content2 h3{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.viewproduct-shopbtn{
+  width: 50%;
+  height: 4vh;
+}
+
+}
+
+/*Responsive for mobile screen 600px*/
+@media only screen and (max-width: 600px){
+  #navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    }
+
+
+.mainlogo{
+  width: 20%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+
+.menuicon{
+  margin-top: 6%;
+}
+
+
+.carticon{
+  margin-top: 6%;
+}
+
+.searchicon{
+  margin-top: 6%;
+}
+
+nav ul{
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-image: linear-gradient( #f8f1f1,#dfdbd7,#fbf7f5);
+  top: 90px;
+  left: -100%;
+  text-align: center;
+  transition: .2s;
+
+}
+
+nav li{
+  display: block;
+  line-height: 30px;
+  margin: 50px 0;
+}
+
+nav a {
+  font-size: 25px;
+}
+
+
+nav ul.show{
+  left: 0;
+}
+
+
+/* Responsive code for homepae*/
+
+
+#homepage{
+  width: 100%;
+  height: auto;
+}
+
+.innercontainer1{
+  margin-top: 28px;
+}
+
+.contentbox1 {
+  position: absolute;
+  bottom: 15%;
+  width: 45%;
+  height: 20vh;
+  margin-left: 22%;
+  }
+
+  .learnbtn{
+    width: 62%;
+    height: 4vh;
+    font-size: 0.6rem;
+
+  }
+
+.contentbox1 h3{
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+.contentbox1 h1{
+  font-size: 2.5rem;
+ 
+}
+
+.contentbox2 h1{
+  font-size: 1.5rem;
+}
+
+.shopnowbtn{
+  width: 45%;
+  height: 5vh;
+  font-size: 0.7rem;
+}
+
+.contentbox3 h1{
+  font-size: 1.5rem;
+}
+
+
+/*Responsive code for product*/
+.products{
+  width: 100%;
+  height: auto;
+}
+
+.Product-button{
+  font-size: 17px;
+}
+.newproduct-box{
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.topsale-box{
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+.saleoff-box{
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+
+
+}
