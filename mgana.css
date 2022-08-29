@@ -910,7 +910,7 @@ nav ul{
   width: 50%;
   height: 100vh;
   background-image: linear-gradient( #f8f1f1,#dfdbd7,#fbf7f5);
-  top: 80px;
+  top: 68px;
   left: -100%;
   text-align: center;
   transition: .2s;
